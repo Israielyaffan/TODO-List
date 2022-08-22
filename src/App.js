@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/LandingPage';
+import SignUp from './components/SignUp';
+import { useState } from 'react';
+import Login from './components/Login';
+import Dictaphone from './components/Dictaphone';
 
 function App() {
+  const [login,setLogin]=useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {!login?<><SignUp login={setLogin}></SignUp></>:<Login></Login>}
+   {/* <LandingPage></LandingPage> */}
     </div>
   );
 }

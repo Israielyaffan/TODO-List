@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -27,6 +29,160 @@
 .App-link {
   color: #61dafb;
 }
+.add--button
+{
+  border: 1px solid white;
+  height: 2rem;
+  width: 2rem;
+  background-color: darkblue;
+  color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+#inputToDo
+{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 3vh;
+  width: 18vw;
+  border: 2px solid black;
+}
+
+.labelField
+{
+
+  color: #b8beb9;
+}
+
+
+.inputField
+{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 3vh;
+  width: 18vw;
+  border: 2px solid black;
+}
+.inputDiv
+{
+  margin: auto;
+  width: 50%;
+ 
+  padding: 10px;
+}
+.tasks
+{
+  list-style: none;
+  /* display: flex;
+  gap: 10px; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+
+
+.tasks li
+{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  text-align: center;
+  border: solid 2px #d0d0d0;
+  border-radius: .4em;
+  padding: .5em .8em .5em .5em;
+  margin-bottom: 1em;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,135,200,1) 0%, rgba(225,212,232,1) 60%);
+}
+
+.badge {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: rgba(166,135,200,1) ;
+  color:black;
+  border-radius: 12px; 
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: .05rem ;
+  line-height: inherit;
+  position: absolute;
+  top: 10px;
+  right:0;
+  margin-right:1vw;
+  width: 50px;
+  height: 30px;
+  border: 2px solid ;
+}
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.svg-container {
+  width: 45%;
+}
+
+.hex {
+  position: relative;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: var(--anim-delay);
+  transform-origin: 50% 50%;
+  animation-name: growIn;
+}
+
+[data-index="1"] {
+  --anim-delay: 300ms;
+}
+
+[data-index="2"] {
+  --anim-delay: 400ms;
+}
+
+[data-index="3"] {
+  --anim-delay: 500ms;
+}
+
+[data-index="4"] {
+  --anim-delay: 600ms;
+}
+
+[data-index="5"] {
+  --anim-delay: 700ms;
+}
+
+[data-index="6"] {
+  --anim-delay: 800ms;
+}
+
+[data-index="7"] {
+  --anim-delay: 900ms;
+}
+
+@keyframes growIn {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+  }
+  20%,
+  70% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+
 
 @keyframes App-logo-spin {
   from {
