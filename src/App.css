@@ -39,6 +39,23 @@
   border-radius: 50%;
   margin-left: 10px;
 }
+
+
+.app--button
+{
+  padding: 6px 10px;
+  border: 2px solid #92a8d1;
+  margin-left: 4%;
+  margin-top: 1vh;
+  width: 20%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.app--button1
+{
+
+}
+
 #inputToDo
 {
   text-align: center;

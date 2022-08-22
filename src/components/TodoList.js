@@ -130,32 +130,33 @@ function TodoList(props) {
         </div>
         <div>
         <p>Microphone: {listening ? "on" : "off"}</p>
-          <button onClick={SpeechRecognition.startListening}>Start</button>
-          <button onClick={SpeechRecognition.stopListening}>Stop</button>
-          <button onClick={resetTranscript}>Reset</button>
+          <button className="app--button1" onClick={SpeechRecognition.startListening}>Start</button>
+          <button className="app--button1" onClick={SpeechRecognition.stopListening}>Stop</button>
+          <button className="app--button1" onClick={resetTranscript}>Reset</button>
+          </div>
         <div>
-          <button
+          <button className="app--button"
             onClick={() => {
               activeHandler();
             }}
           >
             Active
           </button>
-          <button
+          <button className="app--button"
             onClick={() => {
               completedHandler();
             }}
           >
             Completed
           </button>
-          <button
+          <button className="app--button"
             onClick={() => {
               allHandler();
             }}
           >
             All
           </button>
-        </div>
+      
       </div>
       <DragDropContext
         onDragEnd={(e) => {
